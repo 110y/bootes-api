@@ -35,7 +35,3 @@ type RouteSpec struct {
 func (c *Route) GetWorkloadSelector() *WorkloadSelector {
 	return c.Spec.WorkloadSelector
 }
-
-func init() {
-	SchemeBuilder.Register(&Route{}, &RouteList{})
-}

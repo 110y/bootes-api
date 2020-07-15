@@ -35,7 +35,3 @@ type ClusterSpec struct {
 func (c *Cluster) GetWorkloadSelector() *WorkloadSelector {
 	return c.Spec.WorkloadSelector
 }
-
-func init() {
-	SchemeBuilder.Register(&Cluster{}, &ClusterList{})
-}

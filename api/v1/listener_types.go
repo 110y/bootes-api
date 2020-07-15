@@ -35,7 +35,3 @@ type ListenerSpec struct {
 func (l *Listener) GetWorkloadSelector() *WorkloadSelector {
 	return l.Spec.WorkloadSelector
 }
-
-func init() {
-	SchemeBuilder.Register(&Listener{}, &ListenerList{})
-}

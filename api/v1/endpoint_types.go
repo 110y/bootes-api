@@ -35,7 +35,3 @@ type EndpointSpec struct {
 func (l *Endpoint) GetWorkloadSelector() *WorkloadSelector {
 	return l.Spec.WorkloadSelector
 }
-
-func init() {
-	SchemeBuilder.Register(&Endpoint{}, &EndpointList{})
-}
